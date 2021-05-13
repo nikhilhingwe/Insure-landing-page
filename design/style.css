@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    /* font-family: 'Karla', sans-serif; */
+    font-family: 'DM Serif Display', serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+img{
+   width: 100%;
+}
+
+h1 h2 p{
+    line-height: 1.6;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+/* =====HEADER====== */
+
+.header-1{
+    font-family: 'Karla', sans-serif;
+}
+
+.container{
+    max-width: 1120px;
+    margin: 0 auto;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+.logo img{
+    padding: 0px 20px;
+}
+
+.items nav ul{
+    display: flex;
+}
+.items nav a{
+    color: hsl(256, 26%, 20%);
+    padding: 7px 10px;
+}
+
+.items nav li{
+    /* border: 1px solid hsl(273, 4%, 51%); */
+    margin: 0px 10px;
+    padding: 7px 0px;
+}
+
+.items nav a:hover{
+    color: white;
+    background-color:  hsl(225, 28%, 29%);
+}
+
+
+
+
+/* ===== section-2 ===== */
+
+.section-2{
+    background-color: hsl(225, 28%, 29%);
+}
+
+.plans{
+    padding: 70px 10px;
+    
+}
+.plans span{
+    color: #fff;
+}
+
+.plans h1{
+    padding-top: 50px;
+    padding-bottom: 20px;
+    color: #fff;
+    font-family: font-family: 'DM Serif Display', serif;
+    font-size: 50px;
+}
+
+.plans p{
+
+    color: #fff;
+}
+
+.plans button{
+    margin-top: 30px;
+    background: none;
+    outline: 1px solid #fff;
+    padding: 5px 15px;
+    color: #fff;
+    cursor: pointer;
+}
+.plans button:hover{
+    transform: scale(0.98);
+}
+
+.box{
+    display: flex;
+    align-items: center;
+}
+
+.image img{
+    width: 70%;
+    margin: 0px 30px;
+    position: relative;
+    top: 12vh;
+    
+}
+
+/* ====DIFFERENT===== */
+
+
+.different{
+    padding-top: 200px;
+}
+
+.diff-heading span{
+    color: hsl(256, 26%, 20%);
+}
+
+.diff-heading h1{
+    padding-top: 50px;
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+
+.bd-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 5vw;
+    padding: 100px 0px;
+}
+
+.bd-grid img{
+    width: 30%;
+}
+
+.bd-grid h2 {
+    padding-top: 20px;
+}
+
+.bd-grid p{
+    padding-top: 20px;
+}
+/* ===== How we work */
+
+.work{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    padding: 60px;
+    background-color:  hsl(256, 26%, 20%);
+}
+
+.work h1{
+    position: relative;
+    top: -20px;
+    font-size: 50px;
+    color: #fff;
+}
+
+.work span{
+    border: 1px solid #fff;
+    padding: 10px 15px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.work span:hover{
+    transform: scale(0.98);
+    border: 2px solid #fff;
+}
+
+/* ======= Footer====== */
+
+.footer{
+    font-family: 'Karla', sans-serif;
+    background-color: rgb(247, 243, 243);
+}
+
+.footer-items{
+    border-bottom: 1px solid rgb(167, 163, 163);
+}
+
+
+
+.items-2 nav ul{
+    display: flex;
+}
+
+.items-2 nav li{
+    padding: 0px 10px;
+}
+
+.items-2 nav li{
+    padding: 0px 15px;
+}
+
+.items-2 nav li:hover{
+    transform: scale(1.2);
+}
+
+.grid-2{
+    padding: 50px 0px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.grid-2 h3{
+    padding-bottom: 25px;
+    color: rgb(196, 190, 190);
+}
+.grid-2 h4{
+    color: rgb(51, 50, 50);
+    padding-top: 10px;
+}
+
+
+
+.attribution{
+    padding: 30px 0px;
+    font-size: 20px;
+}
+
+

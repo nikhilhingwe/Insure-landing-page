@@ -1,0 +1,35 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a,a:hover,a:visited{
+    text-decoration: none;    
+}
+
+li{
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4{
+    font-family: 'DM Serif Display', serif;
+    font-weight: 300;
+}
+
+p{
+    font-family: 'Karla', sans-serif;
+}
+
+
+.scroll{
+    overflow-y: hidden;
+}

@@ -1,0 +1,193 @@
+.hero{
+    position: relative;
+    background: $DarkViolet;
+    @include max(768px){
+       padding-bottom: 94px;
+    }
+
+
+    &::before{
+        z-index: 10;
+        content: "";
+        display: block;
+        height: 100vh;
+        width: 30%;
+        position: absolute;
+        top: -140px;
+        right: 0;
+        background: url(/images/bg-pattern-intro-right-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right;
+        @include max(1170px){
+            top: -240px;
+        }
+        @include max(850px){
+            top: -250px;
+        }
+        @include max(768px){
+            display: none;
+        }
+    }
+
+
+    &::after{
+        content: "";
+        display: block;
+        height: 100vh;
+        width: 13%;
+        z-index: 0;
+        position: absolute;
+        top: 300px;
+        left: 0;
+        background: url(/images/bg-pattern-intro-left-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: left;
+        @include max(768px){
+            display: none;
+        }
+    }
+
+
+    &__flex{
+        @include flex(row,center,none);
+        @include max(768px){
+            @include flex(column-reverse,center,center);
+        }
+    }
+
+
+    &__text{
+        color: $VeryLightGray;
+        position: relative;
+        top: -25px;
+        right: 3px;
+        padding-right: 20px;
+        @include max(768px){
+            text-align: center;
+            right: 0;
+            padding: 0px;
+        }
+        span{
+            @include max(768px){
+                display: none;
+            }
+        }
+        
+        h1{
+            padding-top: 63px;
+            font-size: 4.43rem;
+            line-height: 0.91;
+            max-width: 32rem;
+            letter-spacing: -0.5px;
+            @include max(1050px){
+                font-size: 3.2rem;
+                line-height: 1;
+                max-width: 23rem;
+            }
+            @include max(840px){
+                font-size: 2.9rem;
+                max-width: 20rem;
+            }
+            @include max(768px){
+                padding-top: 101px;
+                font-size: 2.9rem;
+                line-height: 1.1;
+                max-width: 20rem;
+                margin: auto;
+            }
+            @include max(376px){
+                font-size: 2.6rem;
+                max-width: 18rem;
+                margin: auto;
+            }
+        }
+        
+        p{
+            padding-top: 29px;
+            padding-bottom: 40px;
+            line-height: 1.6;
+            max-width: 70rem;
+            @include max(1050px){
+                max-width: 60rem;
+            }
+            @include max(768px){
+                padding-top: 20px;
+                padding-bottom: 35px;
+                max-width: 30rem;
+                margin: auto;
+            }
+            @include max(376px){
+                font-size: 0.92rem;
+                max-width: 18rem;
+            }
+        }
+
+        .hero__btn{
+            border: 2px solid $VeryLightGray;
+            color: $VeryLightGray;            font-family: $Karla;
+            text-transform: uppercase;
+            padding: 10px 29px;
+            font-size: 13.7px;
+            letter-spacing: 1px;
+            z-index: 100;
+            position: inherit;
+            &:hover{
+                background: $VeryLightGray;
+                color: $DarkViolet;
+                transition: .3s ease-in-out;
+            }
+        }
+    }
+
+
+    &__img-desktop{
+        background-image: url(/images/image-intro-desktop.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 37.5rem;
+        width: 69.5rem;
+        position: relative;
+        top: 105px;
+        left: 3.2px;
+        @include max(768px){
+            display: none;
+        }
+    }
+
+
+    &__img-mobile{
+        @include min(769px){
+            display: none;
+        }
+        background: url(/images/image-intro-mobile.jpg);
+        background-repeat: no-repeat;
+        height: 460px;
+        width: 100%;
+        background-size: cover;
+        &::before{
+            content: "";
+            display: block;
+            height: 160px;
+            width: 100%;
+            background: url(/images/bg-pattern-intro-left-mobile.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: absolute;
+            top: 458px;
+        }
+        &::after{
+            content: "";
+            display: block;
+            height: 328px;
+            width: 100%;
+            background: url(/images/bg-pattern-intro-right-mobile.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: right;
+            position: absolute;
+            top: 774px;
+        }
+    }
+}

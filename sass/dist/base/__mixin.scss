@@ -1,0 +1,18 @@
+@mixin flex($direction,$align-item,$j-content){
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align-item;
+    justify-content: $j-content;
+}
+
+@mixin min($breakpoint) {
+    @media screen and (min-width:$breakpoint) {
+        @content;
+    }
+}
+
+@mixin max($breakpoint) {
+    @media screen and (max-width:$breakpoint) {
+        @content;
+    }
+}
